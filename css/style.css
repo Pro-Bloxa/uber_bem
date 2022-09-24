@@ -1,0 +1,501 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.container {
+    max-width: 1125px;
+    margin: 0 auto;
+}
+
+/* повторяющиеся стили ------------------------------ */
+
+.background-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.button {
+    background-color: #45daf7;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 0 3px rgba(43, 44, 44, 0.6);
+    text-shadow: 1px 1px 2px rgba(43, 44, 44, 0.3);
+}
+
+.btn-title {
+    display: inline-block;
+    padding: 8px 15px;
+    text-transform: uppercase;
+}
+
+.btn-title_black {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-title_white {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.title {
+    margin-top: 35px;
+    font-size: 38px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 17px;
+    font-weight: 300;
+    color: #222222;
+}
+
+.text_white {
+    color: #ffffff;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* первый экран main ------------------------------ */
+
+.main {
+    height: 800px;
+    background-image: url(../img/bg/uber_bg.jpg);
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+}
+
+.menu__lists {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__link {
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.subheader {
+    width: 100%;
+    background: rgba(43, 44, 44, 0.6);
+}
+
+.subheader-block {
+    max-width: 950px;
+    height: 85px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-block__img {
+    width: 285px;
+}
+
+.logo-block__oficial {
+    font-size: 13px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.call {
+    display: flex;
+}
+
+.call__box {
+    text-align: right;
+    font-style: normal;
+}
+
+.call__text {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.call__phone-number {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.call__button {
+    margin-left: 30px;
+    padding: 0 25px;
+    font-size: 13px;
+}
+
+.promo-block {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.promo-block__title {
+    margin-top: 65px;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo-block__subtitle {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo-block__text {
+    margin-top: 22px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.promo-block__button {
+    margin-top: 115px;
+    padding: 21px 38px;
+    font-size: 18px;
+}
+
+/* второй экран reasons ------------------------------ */
+
+.reasons {
+    padding-top: 70px;
+    text-align: center;
+}
+
+.reasons__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reasons__box {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.reasons__icon-bg {
+    display: flex;
+    min-width: 113px;
+    min-height: 113px;
+    background-color: #1eacc7;
+    border-radius: 50%;
+}
+
+.reasons__icon {
+    height: 65px;
+    margin: auto;
+}
+
+.reasons__text-box {
+    width: 343px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.reasons__suttitle {
+    font-weight: 400;
+    color: #1eacc7;
+}
+
+.reasons__text {
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* третий экран mobile ------------------------------ */
+
+.mobile {
+    margin-top: 64px;
+    padding-top: 48px;
+    padding-bottom: 61px;
+    background-image: url(../img/bg/mobile_bg.jpg);
+    text-align: center;
+}
+
+.mibile__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mobile__box {
+    width: 319px;
+    height: 280px;
+    margin-top: 35px;
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile__box_bg1 {
+    background-image: url(../img/mobile/card_1.jpg);
+}
+
+.mobile__box_bg2 {
+    background-image: url(../img/mobile/card_2.jpg);
+}
+
+.mobile__box_bg3 {
+    background-image: url(../img/mobile/card_3.jpg);
+}
+
+.mobile__box_bg4 {
+    background-image: url(../img/mobile/card_4.jpg);
+}
+
+.mobile__box_bg5 {
+    background-image: url(../img/mobile/card_5.jpg);
+}
+
+.mobile__box_bg6 {
+    background-image: url(../img/mobile/card_6.jpg);
+}
+
+.mobile__subtitle {
+    margin-top: 90px;
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.mobile__plus {
+    margin-bottom: 35px;
+}
+
+/* четвертый экран selection ------------------------------ */
+
+.selection {
+    padding-top: 55px;
+    padding-bottom: 135px;
+    background-image: url(../img/bg/selection_bg.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.selection__img {
+    margin-top: 58px;
+}
+
+.selection__text {
+    margin-top: 8px;
+}
+
+/* пятый экран require ------------------------------ */
+
+.require {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.require__block {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.require__box {
+    max-width: 480px;
+    margin-bottom: 60px;
+}
+
+.require__box-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #1eacc7;
+}
+
+.require__box-title_red {
+    color: #ff5656;
+}
+
+.require__box-lists {
+    margin-top: 17px;
+}
+
+.require__box-list:nth-child(n+2) {
+    margin-top: 11px;
+}
+
+.require__box-list_blue::before {
+    content: ' ';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/icons/checkmark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.require__box-list_red::before {
+    content: ' ';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/icons/checkmark_red.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.require__box-text {
+    margin-top: 15px;
+    color: #1eacc7;
+}
+
+/* шестой экран city ------------------------------ */
+
+.city {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(/img/bg/world_bg.png);
+    text-align: center;
+}
+
+.city__text {
+    margin-bottom: 485px;
+
+}
+
+.city__link {
+    font-size: 15px;
+    color: #1eacc7;
+}
+
+/* footer ------------------------------------------- */
+
+.footer {
+    padding-top: 14px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.footer__line {
+    margin: 0 auto;
+    width: 299px;
+    height: 4px;
+    background-color: #45daf7;
+}
+
+.footer__wrapper {
+    margin-top: 30px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* не получилось добавить декоративную горизонтальную линию с помощью псевдоэлемента. Не поняла, почему не сработало. Похоже, из-за flex? */
+/* .footer__wrapper::before {
+    content: ' ';
+    display: block;
+    width: 299px;
+    height: 4px;
+    background-color: #45daf7;
+    margin: 0 auto;
+} */
+
+.footer__socials {
+    flex-basis: 33.333%;
+    display: flex;
+    margin-left: 23px;
+}
+
+.footer__socials_link {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: #070716;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.footer__socials_img {
+    margin: auto;
+}
+
+.footer__nav {
+    flex-basis: 33.333%;
+}
+
+.footer__nav_main-link {
+    margin-left: 45px;
+    font-size: 15px;
+    color: #070716;
+}
+
+.footer__nav_sub {
+    margin-top: 12px;
+}
+
+.footer__nav_sub-link {
+    margin-left: 20px;
+    font-size: 11px;
+    color: #999999;
+}
+
+.footer__store {
+    flex-basis: 33.333%;
+    display: flex;
+    justify-content: end;
+    margin-right: 25px;
+}
+
+.footer__store_link {
+    margin-left: 5px;
+}
+
+.footer__lang {
+    font-size: 11px;
+    color: #45daf7;
+}
